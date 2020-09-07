@@ -51,6 +51,7 @@ public class Login {
 	}
 	
 	public static void cadastroUser(PrintWriter printWriter) {
+		System.out.println("\n");
 		System.out.println("***  CADASTRO DE NOVO USUARIO ***");
 		
 		User usuario = new User();
@@ -104,9 +105,12 @@ public class Login {
 		int option;
 		option = ler.nextInt();
 		
+		
+		
+		boolean checkLogin = false;
 		if(option == 0) {
-			while(!login()) {
-				login();
+			while(!checkLogin) {
+				checkLogin = login();
 			}
 		} else {
 			File newArquivo = new File(System.getProperty("user.dir"), "login.txt"); 
@@ -127,6 +131,7 @@ public class Login {
 		getFileLogin(System.getProperty("user.dir") + "\\login.txt");
 		User usuario = new User();
 		
+		System.out.println("\n");
 		System.out.println("--------  EFETUAR LOGIN ----------");
 			
 		Scanner login = new Scanner(System.in);
@@ -142,12 +147,14 @@ public class Login {
 			  
 			if(c.split(";")[0].equals(usuario.getUser()) && c.split(";")[1].equals(usuario.getPassword())) {
 				System.out.println("Usuario logado");
+				System.out.println("\n");
 				return true;
 			}
 				
 		}
 		
 		System.out.println("Login ou senha incorretos. Tente novamente!");
+		System.out.println("\n");
 		return false;
 	}
 				

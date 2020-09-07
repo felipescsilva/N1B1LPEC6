@@ -5,8 +5,22 @@ import java.time.LocalDate;
 import caffer.Crud.Metodos;
 
 public class Roupa {
+	
+	private int codigoItem;
+	private LocalDate dataEntrega;
+	private String localDaCompra;
+	private String tipo;
+	private String marca;
+	private String caracteristicas;
+	private Tamanho tamanho; 
+	private Cor cor;
+	private double valorEtiqueta;
+	private double valorPago;
+	private double valorParaMargemDe100Porc;
+	private double valorSugerido;
+	
 	public Roupa() {
-		super();
+		
 	}
 	public Roupa(String dataEntrega, String localDaCompra, String tipo, String marca, String caracteristicas,
 			Tamanho tamanho, Cor cor, double valorEtiqueta, double valorPago,
@@ -26,18 +40,7 @@ public class Roupa {
 		this.valorParaMargemDe100Porc = this.valorPago * 2;
 		this.valorSugerido = valorSugerido;
 	}
-	private int codigoItem;
-	private LocalDate dataEntrega;
-	private String localDaCompra;
-	private String tipo;
-	private String marca;
-	private String caracteristicas;
-	private Tamanho tamanho; 
-	private Cor cor;
-	private double valorEtiqueta;
-	private double valorPago;
-	private double valorParaMargemDe100Porc;
-	private double valorSugerido;
+	
 	public int getCodigoItem() {
 		return codigoItem;
 	}
