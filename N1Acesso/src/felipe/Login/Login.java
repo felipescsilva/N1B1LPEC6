@@ -43,6 +43,7 @@ public class Login {
 			FileWriter fileWriter = new FileWriter(newArquivo, true);
 			PrintWriter printWriter = new PrintWriter(fileWriter);
 			cadastroUser(printWriter);
+			getFileLogin(System.getProperty("user.dir") + "\\login.txt");
 			
 		} catch(Exception e) {
 			System.out.println("Impossível criar arquivo!");
@@ -70,7 +71,7 @@ public class Login {
 		confSenha = ler.next();
 		
 		if(!(senha.equals(confSenha))) {
-			System.out.println("Senhan incompatíveis");
+			System.out.println("Senhas incompatíveis");
 			System.out.println();
 			cadastroUser(printWriter);
 		}
@@ -88,7 +89,7 @@ public class Login {
             printWriter.close();
             
             System.out.println("Usuário cadastrado com sucesso!");
-            login();
+            
 
         } catch (Exception e) {
             
@@ -102,17 +103,17 @@ public class Login {
 		System.out.println("1: CADASTRO");
 		
 		Scanner ler = new Scanner(System.in);
-		int option;
-		option = ler.nextInt();
+		String option;
+		option = ler.next();
 		
 		
 		
 		boolean checkLogin = false;
-		if(option == 0) {
+		if(option.equals("0")) {
 			while(!checkLogin) {
 				checkLogin = login();
 			}
-		} else {
+		} else if (option.equals("1")) {
 			File newArquivo = new File(System.getProperty("user.dir"), "login.txt"); 
 			
 			try {
@@ -120,10 +121,14 @@ public class Login {
 				FileWriter fileWriter = new FileWriter(newArquivo, true);
 				PrintWriter printWriter = new PrintWriter(fileWriter);
 				cadastroUser(printWriter);
+				menuLogin();
 				
 			} catch(Exception e) {
 				System.out.println("Impossível criar arquivo!");
 			};
+		} else {
+			System.out.println("Opção inválida!");
+			menuLogin();
 		}
 	}
 	
