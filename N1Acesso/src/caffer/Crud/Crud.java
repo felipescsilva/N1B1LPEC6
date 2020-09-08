@@ -96,22 +96,30 @@ public class Crud {
 					switch (listaDeRoupa[i].split("/")[6]){
 						case "p":
 							roupa.setTamanho(Tamanho.P);
+							break;
 						case "m":
 							roupa.setTamanho(Tamanho.M);
+							break;
 						case "g":
 							roupa.setTamanho(Tamanho.G);
+							break;
 					}
 					switch (listaDeRoupa[i].split("/")[7]){
 						case "branco":
 							roupa.setCor(Cor.BRANCO);
+							break;
 						case "preto":
 							roupa.setCor(Cor.PRETO);
+							break;
 						case "azul":
 							roupa.setCor(Cor.AZUL);
+							break;
 						case "vermelho":
 							roupa.setCor(Cor.VERMELHO);
+							break;
 						case "verde":
 							roupa.setCor(Cor.VERDE);
+							break;
 					}
 					roupa.setValorEtiqueta(Double.parseDouble(listaDeRoupa[i].split("/")[8]));
 					roupa.setValorPago(Double.parseDouble(listaDeRoupa[i].split("/")[9]));

@@ -1,5 +1,5 @@
-4/2020-12-23/Fábrica Top/Camisa/Nikidas/Qualquer caracteristica/g/verde/800.0/900.0/1800.0/800.0
-5/2020-12-23/Fábrica/Camisa/NIKE/Qualquer caracteristica/g/branco/800.0/800.0/1600.0/800.0
+4/2020-12-23/Fábrica Top/Camisa/Puma/Qualquer caracteristica/g/verde/800.0/900.0/1800.0/200.0
+5/2020-12-23/Fábrica/Camisa/Nike/Resistente, Confortável/g/verde/800.0/800.0/1600.0/800.0
 6/2020-12-23/Fábrica/Camisa/NIKE/Qualquer caracteristica/g/branco/800.0/800.0/1600.0/800.0
 7/2000-02-15/sads/fdfdsf/fdsfd/fsdf/g/branco/1500.0/1000.0/2000.0/2000.0
 8/2000-02-15/fsdfsd/fdgfdf/gdfgfd/fdgdfg/g/azul/1500.0/1000.0/2000.0/2000.0
@@ -8,3 +8,4 @@
 12/2000-02-15/dfd/fdgdf/g/dfg/g/branco/1.0/2.0/4.0/3.0
 13/2001-02-15/asdf/asddf/asd/asd/p/verde/0.0/10.0/20.0/2.0
 14/2000-02-15/gfd/gfg/fdg/fdg/g/azul/1.0/1.0/2.0/1.0
+15/2020-12-20/Lugar/meia/Qualquer uma/Caracteristicamente caracteristico/m/branco/200.0/250.0/500.0/300.0
